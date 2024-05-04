@@ -24,7 +24,7 @@ public class BootstrapData {
     @PostConstruct
     public void run() {
         Author eric = new Author();
-        eric.setFistName("Eric");
+        eric.setFirstName("Eric");
         eric.setLastName("Evans");
 
         Book ddd = new Book();
@@ -35,7 +35,7 @@ public class BootstrapData {
         Book dddSaved = bookRepository.save(ddd);
 
         Author rod = new Author();
-        rod.setFistName("Rod");
+        rod.setFirstName("Rod");
         rod.setLastName("Johnson");
 
         Book noEJB = new Book();
