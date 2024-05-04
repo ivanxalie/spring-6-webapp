@@ -1,6 +1,9 @@
 package guru.springframework.spring6webapp.domain;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -9,7 +12,7 @@ import java.util.Set;
 @Entity
 public class Author {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
     private String fistName;
     private String lastName;
